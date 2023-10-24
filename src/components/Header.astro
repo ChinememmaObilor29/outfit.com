@@ -1,12 +1,28 @@
 ---
 
 interface Props {
-	title: string;
-	body: string;
-	href: string;
+	title?: string;
+	body?: string;
 }
 
-const { href, title, body } = Astro.props;
+const {title, body } = Astro.props;
 
+
+import Layout from '../layouts/Layout.astro';
 ---
 
+<Layout title='outfit'>
+    <main class="container mx-auto justify-center ">
+        <header class="p-4 text-black"> 
+              <h1 class="flex justify-center text-4xl">outfit</h1>
+        </header>
+        <nav class="flex justify-center items-center text-transform: uppercase font-bold space-x-4">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">About</a>
+            <a href="#" class="hover:underline">Services</a>
+            <a href="#" class="hover:underline">Contact</a>
+        </nav>
+    </main>
+
+
+</Layout>
