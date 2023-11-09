@@ -1,0 +1,174 @@
+---
+
+interface Props {
+	title?: string;
+	body?: string;
+}
+
+const {title, body } = Astro.props;
+
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='outfit'>
+    <footer class="">
+        <div class="footer-container">
+            <div class="footer-lists">
+                <h2>Support</h2>
+                <ul>
+                 <a href=""><li>FAQs</li></a>   
+                    <a href=""><li>Track my Order</li></a>
+                    <a href=""><li>Return</li></a>
+                    <a href=""><li>TJX Rewards Credit Card</li></a>
+                   <a href=""><li>Gift Cards</li></a> 
+                    <a href=""><li>Find A store</li></a>
+                    <a href=""><li>Shipping & Delivery</li></a>
+                    <a href=""><li>COVID-19 info</li></a>
+                    <a href=""><li>Product Recalls</li></a>
+                   <a href=""><li>Site Map</li></a> 
+                   <a href=""><li>My Account</li></a> 
+                    <a href=""><li>Contact Us</li></a>
+                </ul>
+            </div>
+
+            <div class="footer-lists">
+                <h2>TJX Rewards<span>©</span>credit card</h2>
+                <ul>
+                   <a href=""><li>Pay Bill</li></a> 
+                   <a href=""><li>Learn More & Apply</li></a> 
+                  <a href=""><li>View my Rewards</li></a>  
+                </ul>
+            </div>
+
+            <div class="footer-lists shp">
+                <h2>Shopping & App</h2>
+                <ul>
+                   <a href=""><li>How We Do It</li></a> 
+                   <a href=""><li>Comparison Pricing</li></a> 
+                   <a href=""><li>Gift Cards</li></a> 
+                   <a href=""><li>Find A Store</li></a> 
+                   <a href=""><li>Runaway Stores</li></a> 
+                   <a href=""><li>Grand Openings</li></a> 
+                   <a href=""><li>Shipping & Delivery</li></a> 
+                </ul>
+            </div>
+
+            <div class="footer-lists">
+                <h2>Our Company</h2>
+                <ul>
+                   <a href=""><li>The TJX Companies Inc.</li></a> 
+                  <a href=""><li>TJX Corporate Responsibillity</li></a> 
+                    <a href=""><li>Careers</li></a>
+                   <a href=""><li>Inclusion & Diversity</li></a> 
+                   <a href=""><li>Social Responsibillity</li></a> 
+                   <a href=""><li>CA Supply Chain</li></a> 
+                   <a href=""><li>Investor Realtions</li></a> 
+                </ul>
+            </div>
+
+            <div class="footer-lists">
+                <h2>Privacy & Terms</h2>
+                <ul>
+                    <a href=""><li>Privacy</li></a> 
+                   <a href=""><li>CA Privacy</li></a> 
+                    <a href=""><li>Terms of Use</li></a> 
+                   <a href=""><li>Do Not Sell My Personal</li></a> 
+                    <a href=""><li>Information</li></a>
+                   <a href=""><li>Site Accessibillity</li></a> 
+            </div>
+        </div>
+
+        <div class="row1">
+            Stay Connected With Outfit
+        </div>
+
+        <div class="row2">
+            © 2023 Outfit | Feedback
+        </div>
+    </footer>
+</Layout>
+
+
+
+
+<style>
+    body{
+        overflow-x: hidden;
+    }
+    footer{
+        background-color: white;
+        padding: 20px;
+        position: relative;
+        top: 150px;
+    }
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* Styling for individual Lists */
+    .footer-lists{
+        flex: 0 0 200px;
+        margin-top: -30px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    /* Styling for Lists headings!! */
+    .footer-lists h2{
+        padding-top: 20px;
+        font-weight: bold;
+    }
+
+       /* Styling for the lists Items */
+       .footer-lists ul{
+        list-style: none;
+        padding-top: 10px;
+       }
+       .footer-lists li{
+        margin-bottom: 5px;
+       }
+       .footer-lists li:hover{
+        text-decoration: underline;
+       }
+       span{
+        font: 1px;
+       }
+       .shp{
+        margin-left: 10px;
+       }
+       .row1{
+        padding: 30px;
+        position: relative;
+        left: 45px;
+       }
+       .row2{
+        float: right;
+        position: relative;
+        bottom: 56px;
+       }
+       
+
+       /* Media Queries For Css */
+       @media  (max-width: 768px) {
+        .footer-lists{
+        padding-top: 10px;
+    }
+    .shp{
+        margin-left: -5px;
+       }
+       .row1{
+        padding: 30px;
+        position: relative;
+        left: -45px;
+        font-size: 13px;
+       }
+       .row2{
+        position: relative;
+        font-size: 13px;
+        bottom: 50px;
+       }
+
+       }
+
+</style>
