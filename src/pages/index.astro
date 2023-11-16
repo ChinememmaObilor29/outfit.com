@@ -1,16 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro'
-import Footer from '../components/Footer.astro';
-
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="Outift.com">
-    <main class="">
-        <Header />	
-        <Hero />
-        <Footer />
-    </main>
+  <main class=" container max-w-full">
+    <div class="top-section">
+        <Navbar />
+      <Header />
+    </div>
+
+    <Footer />
+  </main>
 </Layout>
 
+<style>
+
+  .top-section{
+     background-image: url('./outfit-main2.jpg');
+     color: white;
+     height: 50rem;
+     background-size: cover;
+  }
+</style>

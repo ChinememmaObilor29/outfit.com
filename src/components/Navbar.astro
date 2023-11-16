@@ -1,0 +1,24 @@
+---
+interface Props {
+  title?: string;
+  body?: string;
+}
+
+const { title, body } = Astro.props;
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="outfit">
+  <main class="container mx-auto justify-center p-10">
+    <nav
+      id="navbar"
+      class="hidden font-sans font-light md:flex justify-center items-center text-transform: uppercase space-x-4">
+      <a href="#" class="hover:underline">MEN</a>
+      <a href="#" class="hover:underline">WOMEN</a>
+      <a href="#" class="hover:underline">BEAUTY & ACCESSORIES</a>
+      <a href="#" class="hover:underline">HOME</a>
+      <a href="#" class="hover:underline">NEW DEALS</a>
+    </nav>
+  </main>
+</Layout>
