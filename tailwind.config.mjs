@@ -20,6 +20,11 @@ export default {
 			  },
 		},
 	},
+	variants: {
+		extend: {
+		  scale: ['hover'],
+		},
+	  },
 	plugins: [],
 }
 
